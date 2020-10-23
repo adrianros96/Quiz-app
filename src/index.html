@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Examination 2</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <!-- This is the text question template -->
+    <template id="quizTemp">
+            <div id="container2">
+                    <div class="name">
+                    </div>
+                        <div id="timer">
+                            <h1 class="timerH1">20 /seconds</h1>
+                        </div>
+                                <div id="question">
+                                    <h1 class="quizHead"></h1>
+                                    <form id="quizForm">
+                                        <p>Answer:</p>
+                                            <input type="text" class ="text" id="answer" autocomplete="off"/><br>
+                                        <input type="submit" class="btnAnswer" value="Next"/>
+                                    </form>
+                                </div>
+                        </div>
+        </template>
+        <!-- This is the alternative question template -->
+        <template id="temp-Alt">
+            <div id="container2">
+                    <div class="name">
+                        </div>
+                <div id="timer">
+                    <h1 class="timerH1">20 /seconds</h1>
+                </div>
+                <div id="question">
+                    <h1 class="quizHead"></h1>
+                    <form id="quizForm">
+                        <div class="divInput">
+
+                        </div>
+                        <input type="button" class="btnAnswer" value="Next"/>
+                    </form>
+                </div>
+                </div>
+            </template>
+            <!-- This is the highscore template -->
+            <template id="highScore">
+                    <div id="container2">
+                        <h1>Congrats!</h1>
+                        <h2>Highscore:</h2>
+                        <div class="name">
+                            </div>
+                            <ol id="highscoreList"></ol>
+                            <input type="submit" class="btnAnswer" value="Play Again"/>
+                     </div>
+                </template>
+    <script type="module" src="js/app.js"></script>
+</head>
+<body>
+    <!-- This is the start page -->
+<div id="container">
+    <div id="content">
+        <div id="welcome">
+            <h1 class="welcomeText">Adrian's Quiz</h1>
+            <p class="description">This is the worlds hardest quiz!</p>
+            <form id="quizForm">
+                <p class="name"> Please enter your name below:</p>
+                <input type="text" id="nickname"/> <br>
+                <input type="button" class ="hvr-pulse" id="submit" value="Enter"/>
+            </form>
+        </div>
+    </div>
+</div>
+<script nomodule src="js/build.js"></script>
+</body>
+</html>
